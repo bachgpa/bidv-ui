@@ -4,6 +4,11 @@ import { publicRoutes } from './routes';
 // import DefaultLayout from './layout/DefaultLayout';
 // import HeaderOnly from './layout/HeaderOnly';
 import { DefaultLayout, HeaderOnly } from './layout';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
+import './layout/responsive/responsive.module.scss';
+
+library.add(faEarthAmericas);
 
 function App() {
    return (

@@ -1,6 +1,9 @@
 @import 'normalize.css';
 
 :root {
+   --text-color: #526066;
+   --green: #00524e;
+   --border-color: #e0e0e0;
 }
 
 html {
@@ -12,4 +15,6 @@ body {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    text-rendering: optimizeSpeed;
    box-sizing: border-box;
+   margin: 0;
+   background-color: #a3a3a3;
 }

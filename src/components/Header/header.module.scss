@@ -1,8 +1,162 @@
 .header {
-   line-height: 5.4rem;
-   padding: 0 24px;
-   background-color: #ccc;
-   color: #292929;
+   margin: 0 auto;
+   height: 103px;
+   max-width: 1300px;
+   font-size: 1.4rem;
+   color: var(--text-color);
+   font-weight: 600;
+   display: flex;
+   max-width: 1300px;
+   background-color: #ffffff;
    border-radius: 4px;
-   font-size: 2.2rem;
+   position: relative;
+   top: 20px;
+}
+
+.options {
+   display: table;
+   flex-direction: column;
+   flex: 1;
+   border-right: 1px solid #e0e0e0;
+}
+
+// MAIN OPTION
+.mainOption {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   border-bottom: 1px solid var(--border-color);
+}
+
+.mainOpionLeft {
+   margin-left: 60px;
+   display: flex;
+   align-items: center;
+   .optionLink:hover {
+      border-bottom: 4px solid var(--green);
+      cursor: pointer;
+      background-color: #f8f8f8;
+   }
+}
+
+.logo {
+   height: 40px;
+   width: 80px;
+   display: inline-block;
+   background-image: url(../../assets/Header.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   margin-right: 32px;
+}
+
+.optionLink {
+   padding: 5px 20px 0 20px;
+   margin-left: 6px;
+   border-color: var(--green);
+   background-color: #ffffff;
+   position: relative;
+   line-height: 42px;
+   display: block;
+   padding: 5px 20px 0;
+   border-bottom: 4px solid transparent;
+}
+
+.optionLink.vipGuess {
+   color: #e0b343;
+   &:hover {
+      border-bottom: 4px solid #e0b343;
+   }
+}
+
+.mainOpionRight {
+   display: flex;
+   align-items: center;
+   .optionLink:hover {
+      cursor: pointer;
+      color: var(--green);
+   }
+}
+
+.lang {
+   height: 101px;
+   width: 65px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   background-image: href(
+      'https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKingdom_of_England&psig=AOvVaw25rImJdqzN3m6Dnre5GU5K&ust=1691078827698000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOj5j9itvoADFQAAAAAdAAAAABAE'
+   );
+   &:hover {
+      cursor: pointer;
+      color: var(--green);
+   }
+}
+.langIcon {
+   font-size: 1.8rem;
+}
+.langText {
+   font-weight: 400;
+   font-size: 1.2rem;
+   color: var(--text-color);
+}
+
+// MORE OPTION
+
+.moreOption {
+   display: flex;
+   justify-content: space-between;
+   height: 50px;
+   align-items: center;
+}
+
+.leftLink {
+   margin-left: 60px;
+   .moreOptionLink {
+      padding-right: 30px;
+   }
+   .moreOptionLink:hover {
+      cursor: pointer;
+      color: var(--green);
+   }
+}
+
+.moreOptionLinkIcon {
+   font-size: 1.6rem;
+}
+
+.rightLink {
+   display: flex;
+   .moreOptionLink {
+      // display: inline-block;
+      line-height: 50px;
+      border-left: 1px solid var(--border-color);
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+   }
+   .moreOptionLink:hover {
+      cursor: pointer;
+      color: var(--green);
+   }
+}
+
+.onlineRegister {
+   display: flex;
+
+   .registerText {
+      padding-left: 20px;
+   }
+}
+
+.onlineBanking {
+   display: flex;
+
+   .onlBankText {
+      padding-left: 20px;
+   }
 }
